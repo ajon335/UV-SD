@@ -1,0 +1,31 @@
+intlight1Pin = 2; // Light 1 connected to digital pin 2
+intlight2Pin = 3; // Light 2 connected to digital pin 3
+
+void setup()
+{
+  pinMode(light1Pin, OUTPUT);
+  pinMode(light2Pin, OUTPUT);
+}
+
+void loop() {
+  // Light 1
+  digitalWrite(light1Pin, HIGH); // Turn on Light 1
+  delay(5000); // Wait for 5 seconds
+  digitalWrite(light1Pin, LOW); // Turn off Light 1
+  delay(5000); // Wait for 5 seconds
+  digitalWrite(light1Pin, HIGH); // Turn on Light 1
+  delay(10000); // Wait for 10 seconds
+  digitalWrite(light1Pin, LOW); // Turn off Light 1
+  delay(5000); // Wait for 5 seconds
+
+  // Light 2
+  delay(5000); // Wait for 5 seconds
+  digitalWrite(light2Pin, HIGH); // Turn on Light 2
+  delay(2000); // Wait for 2 seconds
+  digitalWrite(light2Pin, LOW); // Turn off Light 2
+  delay(4000); // Wait for 4 seconds
+  digitalWrite(light2Pin, HIGH); // Turn on Light 2
+  delay(2000); // Wait for 2 seconds
+  digitalWrite(light2Pin, LOW); // Turn off Light 2
+  delay(4000); // Wait for 4 seconds
+}
